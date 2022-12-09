@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Student</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     
+    <style>
+        
+        h1{
+            background-color: aqua;
+            line-break: anywhere;
+        }
+        .head{
+            margin: auto;
+            width: 400px;
+            border: 5px solid;
+        }
+        .table{
+            visibility: hidden;
+        }
+        .a{
+            margin-left: 29px;
+        }
+
+    </style>
+   
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Student Details</h1><br>
+    </div>
+    <div class="container text-center head p-4">
+        <b>Student:</b>
+        <input type="text" id="student"><br><br>
+        <b>Roll No:</b>
+        <input type="number" id="Rollno"><br><br>
+
+        <b>Age:</b>
+        <input class="a" type="number" id="Age"><br><br>
+
+        <button id="btn" class="btn btn-primary">Submit</button><br><br>
+       <!-- <input type="reset"> -->
+       <button id="Viewbutton" class="btn btn-success">View Student</button><br><br>
+       <input type="reset">
+
+</div>
+
+        <div class="container-fluid text-center">
+
+            <table class="table table-primary table-border" id="studenttable">
+                <thead>
+
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>RollNo</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody class="table-success" id="result">
+
+                </tbody>
+              </table>
+        </div>
+
+    <script src="student.js">
+      
+    </script>
+</body>
+
+</html>
